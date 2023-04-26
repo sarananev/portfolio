@@ -253,9 +253,9 @@ li {
 .works-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   @include sp-size {
     flex-direction: column;
+    align-items: center;
   }
 }
 .madia {
