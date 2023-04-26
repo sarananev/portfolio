@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="私のポートフォリオを作成しました">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio || Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <header id="header">
+    <h1 class="sitetitle">
+      <a href="../index.html" class="logo"><img src="../img/LOGO.png" alt="SARANA"></a>
+    </h1>
+    <nav class="nav">
+      <ul class="menu_item">
+        <li><a href="../index.html">About</a></li>
+        <li><a href="../service/service.html">Service</a></li>
+        <li><a href="../works/works.html">Works</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamberger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  <nav class="sp-menu">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html">About</a></li>
+      <li><a href="../service/service.html">Service</a></li>
+      <li><a href="./works.html">Works</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contact wrapper">
+      <div class="contact-text">
+        <h2 class="section-title scroll">Contact</h2>
+        <span><img src="../img/contact_icon.png" alt="contact_icon"></span>
+        <p class="section-text">お仕事のご相談やご依頼を承っております。
+          <br>下記のお問合せフォームにご連絡ください。</p>
+      </div>
+
+      <form action="" class="form">
+        <ul class="form-item">
+          <li class="form-list">
+            <label for="name" class="form-label">お名前<span>必須</span></label>
+            <input type="text" class="form-text" id="name">
+          </li>
+          <li class="form-list">
+            <label for="furigana" class="form-label">フリガナ<span>必須</span></label>
+            <input type="text" class="form-text" id="furigana">
+          </li>
+          <li class="form-list">
+            <label for="phone" class="form-label">電話番号<span>必須</span></label>
+            <input type="tel" class="form-text" id="phone">
+          </li>
+          <li class="form-list">
+            <label for="email" class="form-label">Email<span>必須</span></label>
+            <input type="email" class="form-text" id="email">
+          </li>
+          <li class="form-list">
+            <label for="inquiry" class="form-label">お問い合わせ内容<span>必須</span></label>
+            <textarea type="text" class="textarea" id="inquiry"></textarea>
+          </li>
+        </ul>
+      </form>
+
+      <div class="buttom-item">
+          <a class="button pushdown" href="#"><span>Submit</span></a>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <p class="copy-text">&copy; sarana_site</p>
+    </footer>
+
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

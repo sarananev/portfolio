@@ -1,0 +1,14 @@
+@mixin bg-color {
+  background: rgba(217, 189, 135, 0.26);
+}
+
+
+/* footer */
+#footer {
+  @include bg-color;
+  padding: 15px 15px;
+}
+.copy-text {
+  font-size: 1.8rem;
+  text-align: center;
+}

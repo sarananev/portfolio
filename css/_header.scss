@@ -1,0 +1,146 @@
+/* header */
+@mixin bg-color {
+  background: rgba(217, 189, 135, 0.26);
+}
+
+@mixin sp-size {
+  @media screen and (max-width:767px) {
+    @content;
+  }
+}
+
+
+#header {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  position: fixed;
+  z-index: 10;
+  @include bg-color;
+}
+
+#header[fixed=true] {
+  position: fixed;
+  background-color: rgba(217, 189, 135, 0);
+  transition: 0.3s;
+  z-index: 10;
+  // top: 0;
+}
+
+
+.sitetitle {
+  position: relative;
+  top: 20px;
+  left: -20px;
+}
+
+.logo {
+  display: block;
+  width: 160px;
+}
+
+
+.menu_item {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-left: auto;
+  li {
+    padding-left: 70px;
+    a {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.hamberger-menu {
+  display: none;
+  @include sp-size {
+    width: 40px;
+    height: 36px;
+    display: block;
+    position: relative;
+    right: 15px;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
+.hamberger-menu.active {
+  z-index: 20;
+}
+.sp-menu {
+  display: none;
+}
+
+/* header SP版 */
+@media screen and (max-width:767px) {
+  .menu_item {
+    display: none;
+  }
+  .sp-menu {
+    background-image: url('../img/nav-bg.jpg');
+    background-size:cover;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 350px 15px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .sp-menu.active {
+    opacity: 1;
+    transition: all 0.5s;
+    display: block;
+  }
+  .sp-menu li {
+    padding-bottom: 42px;
+    a {
+      color: rgba(151, 71, 255, 1);
+      font-size: 1.8rem;
+    }
+  }
+
+  .hamberger-menu span {
+    width: 40px;
+    height: 3px;
+    background: rgba(51, 51, 51, 0.72);
+    display: block;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  .hamberger-menu span:nth-child(1) {
+    top: 12px;
+  }
+  .hamberger-menu span:nth-child(2) {
+    top: 24px;
+  }
+  .hamberger-menu span:nth-child(3) {
+    top: 36px;
+  }
+  .hamberger-menu.active span:nth-child(1) {
+    transform: rotate(-135deg);
+    top: 24px;
+  }
+  .hamberger-menu.active span:nth-child(3) {
+    transform: rotate(135deg);
+    top: 24px;
+  }
+  .hamberger-menu.active span:nth-child(2) {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:480px) {
+  .sp-menu {
+    padding: 250px 15px;
+  }
+}
