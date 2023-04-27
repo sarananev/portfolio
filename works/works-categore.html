@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio || Works</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/works-categore.css">
 </head>
@@ -44,8 +45,21 @@
       <h2 class="section-title scroll">Works</h2>
       <p class="sub-text">- 制作実績 - </p>
       <div class="works-content">
-        <div class="madia">
-          <img src="../img/work-categore1.png" alt="">
+        <div class="swiper">
+          <div class="madia swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../img/work-categore1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/about-min.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/works-min.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/sarvice-min.png" alt="">
+            </div>
+          </div>
         </div>
         <div class="works-categore-text">
           <p class="categore-title">content</p>
@@ -100,7 +114,8 @@
     </footer>
 
   </main>
-
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

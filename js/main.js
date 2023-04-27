@@ -39,6 +39,19 @@ window.addEventListener('DOMContentLoaded', () => {
   observer.observe(Intersect);
 });
 
+// swiperの実装
+const swiper = new Swiper('.swiper', {
+  slidePerView: 1,
+  // spaceBetween: 20,
+  centeredSlides: true,
+  loop: true,
+  loopAdditionalSlides: 1,
+  speed: 1000,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+});
 
 // ページネーションの実装
 const contents = document.querySelector('.grid');
