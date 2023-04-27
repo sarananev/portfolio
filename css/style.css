@@ -74,13 +74,11 @@
   text-align: center;
   padding: 350px 15px;
   opacity: 0;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
-  visibility: hidden;
+  transition: all 0.8s;
 }
 
 .sp-menu.active {
   opacity: 1;
-  visibility: visible;
 }
 
 .sp-menu li {

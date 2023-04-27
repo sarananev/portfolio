@@ -83,7 +83,7 @@
   z-index: 30;
 }
 .sp-menu {
-  background-image: url('../img/nav-bg.jpg');
+  background-image: url('../../img/nav-bg.jpg');
   background-size:cover;
   width: 100%;
   min-height: 100vh;
@@ -238,6 +238,8 @@ li {
 
 /* contact */
 .contact {
+  position: relative;
+  z-index: 1;
   text-align: center;
   padding: 144px 15px 120px;
 }
