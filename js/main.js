@@ -10,7 +10,7 @@
   });
   SP_menu.addEventListener('click', () => {
     hambergerMenu.classList.toggle('active');
-    SP_menu.classList.toggle('active');
+    SP_menu.classList.remove('active');
   });
 
 // フェードインの実装
