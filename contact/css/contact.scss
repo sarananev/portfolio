@@ -267,11 +267,22 @@ li {
   }
 }
 
-.form-list {
+.form-item {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   margin-bottom: 30px;
+  .form-list {
+    text-align: start;
+    margin-bottom: 8px;
+  }
+  dd {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 28px;
+  }
   .form-label {
     margin-bottom: 10px;
     text-align: start;
@@ -292,6 +303,7 @@ li {
 }
 
 .form-text {
+  width: 100%;
   max-width: 700px;
   height: 60px;
   border: solid 1px rgba(0, 0, 0, 0.25);
@@ -300,6 +312,7 @@ li {
 }
 
 .textarea {
+  width: 100%;
   max-width: 700px;
   height: 200px;
   border: solid 1px rgba(0, 0, 0, 0.25);
@@ -309,9 +322,9 @@ li {
 
 
 .buttom-item {
-  padding-top: 70px;
+  padding-top: 50px;
   @include sp-size {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 }
 

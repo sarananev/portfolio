@@ -250,17 +250,28 @@ li {
   max-width: 700px;
   margin: 0 auto 10px;
 }
-.form-list {
+.form-item {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   margin-bottom: 30px;
 }
-.form-list .form-label {
+.form-item .form-list {
+  text-align: start;
+  margin-bottom: 8px;
+}
+.form-item dd {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 28px;
+}
+.form-item .form-label {
   margin-bottom: 10px;
   text-align: start;
 }
-.form-list .form-label span {
+.form-item .form-label span {
   display: inline-block;
   width: 52px;
   height: 30px;
@@ -276,6 +287,7 @@ li {
 }
 
 .form-text {
+  width: 100%;
   max-width: 700px;
   height: 60px;
   border: solid 1px rgba(0, 0, 0, 0.25);
@@ -284,6 +296,7 @@ li {
 }
 
 .textarea {
+  width: 100%;
   max-width: 700px;
   height: 200px;
   border: solid 1px rgba(0, 0, 0, 0.25);
@@ -292,11 +305,11 @@ li {
 }
 
 .buttom-item {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 @media screen and (max-width: 767px) {
   .buttom-item {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 }
 
